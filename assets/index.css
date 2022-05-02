@@ -1,0 +1,116 @@
+@import url('https://fonts.googleapis.com/css2?family=Lora:wght@400;500;600&display=swap');
+
+body {
+	box-sizing: border-box;
+	font-family: 'Lora', serif;
+	font-size: 18px;
+	/* 18 * 1.5 = 27px */
+	line-height: 1.5;
+	color: #fff;
+	background-image: url('./images/background.svg');
+	max-width: 640px;
+	/* Centering page */
+	margin-left: auto;
+	margin-right: auto;
+	padding-top: 40px;
+}
+
+header {
+	background-color: #fff;
+	padding: 40px;
+}
+
+nav {
+	background-color: #f05d5d;
+	padding: 20px 40px;
+}
+
+nav a {
+	color: #fff;
+	text-decoration: none;
+}
+
+nav a:hover {
+	color: #5000ff;
+	border-bottom: 2px solid #fff;
+	padding-bottom: 1px;
+}
+
+nav a:not(:last-child) {
+	margin-right: 20px;
+}
+
+section {
+	background-color: #5000ff;
+	padding: 40px;
+}
+
+section.image {
+	padding: 0;
+	margin: 0;
+}
+
+img {
+	width: 100%;
+}
+
+h2 {
+	font-size: 32px;
+	/* Equal measure to the top and the bottom of text in css */
+	line-height: 1.2;
+}
+
+blockquote {
+	font-size: 32px;
+	line-height: 1.2;
+	font-style: italic;
+	margin: 40px 0;
+}
+
+.contact p {
+	margin-top: 20px;
+}
+
+.contact a {
+	text-decoration: none;
+	color: #fff;
+	border-bottom: 2px solid #f05d5d;
+	padding-bottom: 1px;
+}
+
+@media screen and (max-width: 740px) {
+	section,
+	header {
+		padding: 20px;
+	}
+
+	nav {
+		padding: 10px 20px;
+	}
+
+	h2,
+	blockquote {
+		font-size: 24px;
+	}
+
+	body {
+		padding-top: 0;
+		font-size: 16px;
+	}
+}
+
+@media screen and (min-width: 1000px) {
+	body {
+		font-size: 22px;
+	}
+}
+
+@media screen and (min-width: 2000px) {
+	body {
+		font-size: 26px;
+	}
+
+	section {
+		padding: 60px;
+	}
+}
